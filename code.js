@@ -36,13 +36,12 @@ let count = 0;
 let score = 0;
 
 
-
+// activates quiz onClick
 start.addEventListener("click", startQuiz);
 
 // start quiz
 function startQuiz() {
     start.style.display = "none";
-
     renderQuestion();
     quiz.style.display = "block";
 }
@@ -64,13 +63,12 @@ function checkAnswer(answer) {
     } else {
         answerIsWrong();
     }
-
     if (runningQuestion < lastQuestion) {
         runningQuestion++;
         renderQuestion();
     }
 }
-// alerts right or wrong
+// alerts right or wrong answer
 function answerIsCorrect() {
     alert("Correct answer");
 }
