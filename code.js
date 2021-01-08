@@ -59,7 +59,7 @@ function renderQuestion() {
 
 // check answer
 function checkAnswer(answer) {
-    if (answer == questions[runningQuestion].correct) {
+    if (answer === questions[runningQuestion].correct) {
         answerIsCorrect();
     } else {
         answerIsWrong();
