@@ -6,7 +6,7 @@ const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 
-// create questions
+// quiz questions
 let questions = [
     {
         question: "What color does cheese have?",
@@ -48,7 +48,7 @@ function startQuiz() {
 }
 
 
-// render a question
+// render questions
 function renderQuestion() {
     let q = questions[runningQuestion];
     question.innerHTML = "<p>" + q.question + "</p>";
@@ -70,7 +70,7 @@ function checkAnswer(answer) {
         renderQuestion();
     }
 }
-
+// alerts right or wrong
 function answerIsCorrect() {
     alert("Correct answer");
 }
